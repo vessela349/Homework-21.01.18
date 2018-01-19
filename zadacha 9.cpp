@@ -21,15 +21,15 @@ int main() {
 	cin.getline(text, 100);
 
 	for (int i = 0; i < lenght(text); i++) {
-		for (int j = 0;j < 95;j++){
+		for (int j = 0;j < 95;j++) {
             if((int)text[i] - 32 == j){
                 counter[j] = counter[j] + 1;
             }
 		}
 	}
 
-	for (int i = 0; i < 95; i++){
-        if(counter[i] != 0){
+	for (int i = 0; i < 95; i++) {
+        if(counter[i] != 0) {
             cout<<"The symbol "<<(char)(i+32)<<" appears in your text "<<counter[i]<<" times."<<endl;
         }
 	}
